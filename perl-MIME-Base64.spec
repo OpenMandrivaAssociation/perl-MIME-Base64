@@ -1,9 +1,9 @@
 %define upstream_name    MIME-Base64
-%define upstream_version 3.09
+%define upstream_version 3.10
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:    Encode/decode Base 64 (RFC 2045)
 License:    GPL+ or Artistic
