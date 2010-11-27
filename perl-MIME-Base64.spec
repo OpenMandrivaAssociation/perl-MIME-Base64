@@ -1,5 +1,5 @@
 %define upstream_name    MIME-Base64
-%define upstream_version 3.10
+%define upstream_version 3.13
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
