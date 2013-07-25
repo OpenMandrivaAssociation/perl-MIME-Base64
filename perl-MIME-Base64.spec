@@ -1,15 +1,15 @@
 %define upstream_name    MIME-Base64
-%define upstream_version 3.13
+%define upstream_version 3.14
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Version:    %perl_convert_version 3.14
+Release:    1
 
 Summary:    Encode/decode Base 64 (RFC 2045)
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/MIME/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/MIME/MIME-Base64-3.14.tar.gz
 
 
 BuildRequires: perl-devel
@@ -86,3 +86,4 @@ rm -rf %buildroot
 
 * Sun Jul 12 2009 cpan2dist 3.08-1mdv
 - initial mdv release, generated with cpan2dist
+
