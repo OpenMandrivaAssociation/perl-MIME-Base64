@@ -2,14 +2,14 @@
 %define upstream_version 3.14
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 3.14
+Version:    %perl_convert_version %{upstream_version}
 Release:    1
 
 Summary:    Encode/decode Base 64 (RFC 2045)
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/MIME/MIME-Base64-3.14.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/MIME/MIME-Base64-%{upstream_version}.tar.gz
 
 
 BuildRequires: perl-devel
