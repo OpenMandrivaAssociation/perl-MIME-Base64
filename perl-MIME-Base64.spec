@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Release:    2
 
 Summary:    Encode/decode Base 64 (RFC 2045)
 License:    GPL+ or Artistic
@@ -13,7 +13,6 @@ Source0:    http://www.cpan.org/modules/by-module/MIME/MIME-Base64-%{upstream_ve
 
 
 BuildRequires: perl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module provides functions to encode and decode strings into and from
@@ -39,51 +38,9 @@ The following functions are provided:
 %{make} test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
-
-
-%changelog
-* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 3.130.0-2mdv2012.0
-+ Revision: 763376
-- rebuild
-
-* Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 3.130.0-1mdv2011.0
-+ Revision: 601901
-- update to new version 3.13
-
-* Sat Nov 13 2010 Jérôme Quelin <jquelin@mandriva.org> 3.100.0-1mdv2011.0
-+ Revision: 597104
-- update to 3.10
-
-* Wed Jul 28 2010 Jérôme Quelin <jquelin@mandriva.org> 3.90.0-3mdv2011.0
-+ Revision: 562430
-- rebuild
-
-* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 3.90.0-2mdv2011.0
-+ Revision: 556005
-- rebuild for perl 5.12
-
-* Wed Jan 27 2010 Jérôme Quelin <jquelin@mandriva.org> 3.90.0-1mdv2010.1
-+ Revision: 496997
-- update to 3.09
-
-* Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 3.80.0-1mdv2010.0
-+ Revision: 395246
-- import perl-MIME-Base64
-
-
-* Sun Jul 12 2009 cpan2dist 3.08-1mdv
-- initial mdv release, generated with cpan2dist
-
