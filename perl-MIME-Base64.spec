@@ -34,9 +34,6 @@ The following functions are provided:
 
 %{make}
 
-%check
-%{make} test
-
 %install
 %makeinstall_std
 
